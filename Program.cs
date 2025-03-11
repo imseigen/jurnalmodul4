@@ -16,9 +16,24 @@ class Program
             $"Kode Printer = {kodeProduk.getKodeProduk(KodeProduk.produkElektronik.Printer)}" +
             $"Kode Monitor = {kodeProduk.getKodeProduk(KodeProduk.produkElektronik.Monitor)}" +
             $"Kode Smartwatch = {kodeProduk.getKodeProduk(KodeProduk.produkElektronik.Smartwatch)}" +
-            $"Kode Kamera= {kodeProduk.getKodeProduk(KodeProduk.produkElektronik.Kamera)}" 
-        ); 
-    }
+            $"Kode Kamera= {kodeProduk.getKodeProduk(KodeProduk.produkElektronik.Kamera)}"
+        );
 
+        FanLaptop fanLaptop = new FanLaptop();
+        Console.WriteLine("Mode Up");
+        fanLaptop.modeUp();
+        fanLaptop.modeUp();
+        fanLaptop.modeUp();
+
+        Console.WriteLine("Mode Down");
+        fanLaptop.modeDown();
+        fanLaptop.modeDown();
+        fanLaptop.modeDown();
+
+        Console.WriteLine("Turbo Shortcut");
+        fanLaptop.turboShortcut();
+        fanLaptop.turboShortcut();
+    }
 }
+
   
